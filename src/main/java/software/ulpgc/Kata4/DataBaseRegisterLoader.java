@@ -11,7 +11,7 @@ public class DataBaseRegisterLoader implements RegisterLoader{
 
     private final Connection connection;
 
-    private final String query = "SELECT cpuName, Price, Cores, Category";
+    private final String query = "SELECT cpuName, Price, Cores, Category from Cpu_Benchmark";
 
     public DataBaseRegisterLoader(Connection connection) {
         this.connection = connection;
